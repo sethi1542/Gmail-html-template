@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+  
+  <!-- Enhanced mobile dark mode prevention -->
+  <meta name="color-scheme" content="light only">
+  <meta name="supported-color-schemes" content="light only">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  
+  <title>RoboCup Café - Budoucnost kávy je zde</title>
+  
+  <!--[if gte mso 9]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
+  
+  <style type="text/css">
+    /* Reset styles */
+    body, table, td, p, a, li, blockquote {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    
+    table, td {
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    
+    img {
+      -ms-interpolation-mode: bicubic;
+      border: 0;
+      outline: none;
+      text-decoration: none;
+    }
+    
+    /* Enhanced force white background and dark text in all email clients */
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: #ffffff !important;
+      color: #000000 !important;
+      -webkit-text-size-adjust: 100% !important;
+      -ms-text-size-adjust: 100% !important;
+    }
+    
+    .email-container {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+    
+    /* Comprehensive dark mode overrides for all clients */
+    [data-ogsc] body,
+    [data-ogsc] .email-container,
+    [data-ogsc] table,
+    [data-ogsc] td {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+    
+    /* Gmail dark mode fix - enhanced */
+    u + .body .email-container,
+    u + .body table,
+    u + .body td {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+    
+    /* Outlook dark mode fix - enhanced */
+    [data-ogsb] body,
+    [data-ogsb] .email-container,
+    [data-ogsb] table,
+    [data-ogsb] td {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+    
+    /* Mobile-specific dark mode fixes */
+    /* iOS Mail dark mode override */
+    @media (prefers-color-scheme: dark) {
+      body,
+      .email-container,
+      .content-section,
+      table,
+      td,
+      div,
+      p {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+      }
+      
+      .text-content,
+      .body-text,
+      .feature-text {
+        color: #000000 !important;
+        background-color: transparent !important;
+      }
+      
+      .header-text {
+        color: #e67e23 !important;
+        background-color: transparent !important;
+      }
+      
+      /* Force white background on all table cells */
+      table[style*="background-color: #f7f5f5"] {
+        background-color: #ffffff !important;
+      }
+      
+      td[style*="background-color: #f7f5f5"] {
+        background-color: #ffffff !important;
+      }
+    }
+    
+    /* Android Gmail app specific fixes */
+    .gmail-mobile-forced-width {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+    
+    /* Apple Mail mobile specific fixes */
+    @media only screen and (max-device-width: 480px) {
+      body,
+      table,
+      td,
+      .email-container {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+      }
+    }
+    
+    /* Mobile styles */
+    @media only screen and (max-width: 600px) {
+      .email-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        background-color: #ffffff !important;
+      }
+      
+      .content-section {
+        padding: 10px !important;
+        background-color: #ffffff !important;
+      }
+      
+      .logo-section {
+        padding: 20px 10px !important;
+        background-color: #ffffff !important;
+      }
+      
+      .text-section {
+        padding: 20px 15px !important;
+        background-color: #ffffff !important;
+      }
+      
+      .image-section {
+        padding: 10px !important;
+        background-color: #ffffff !important;
+      }
+      
+      .button-section {
+        padding: 20px 10px !important;
+      }
+      
+      .cta-button {
+        width: 90% !important;
+        padding: 15px 20px !important;
+        font-size: 16px !important;
+      }
+      
+      .feature-image {
+        width: 100% !important;
+        height: auto !important;
+      }
+      
+      .logo-image {
+        max-width: 25% !important;
+      }
+      
+      .header-image {
+        width: 100% !important;
+        height: auto !important;
+      }
+      
+      .feature-text {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        color: #000000 !important;
+      }
+      
+      .feature-title {
+        font-size: 18px !important;
+      }
+      
+      /* Force white background on mobile for all sections */
+      table[style*="background-color"] {
+        background-color: #ffffff !important;
+      }
+    }
+    
+    /* Typography */
+    .header-text {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+      color: #e67e23;
+      text-align: center;
+      line-height: 1.4;
+    }
+    
+    .body-text {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 14px;
+      color: #000000;
+      line-height: 1.6;
+      text-align: center;
+    }
+    
+    .feature-text {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 12px;
+      color: #181818;
+      line-height: 1.6;
+      text-align: center;
+    }
+    
+    .cta-button {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      color: #ffffff !important;
+      background-color: #e67e23;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 22px;
+      display: inline-block;
+      text-align: center;
+      letter-spacing: 2.1px;
+      text-transform: uppercase;
+    }
+    
+    .cta-button:hover {
+      background-color: #3AAEE0 !important;
+    }
+    
+    /* Ensure images don't break layout */
+    .responsive-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+  
+  <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!--<![endif]-->
+</head>
+
+<!-- Added inline styles to body for stronger mobile dark mode prevention -->
+<body class="body" style="margin: 0 !important; padding: 0 !important; background-color: #ffffff !important; color: #000000 !important; -webkit-text-size-adjust: 100% !important;">
+  <!--[if mso]>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td>
+  <![endif]-->
+  
+  <!-- Enhanced inline styles for email container -->
+  <div class="email-container gmail-mobile-forced-width" style="max-width: 600px; margin: 0 auto; background-color: #ffffff !important; color: #000000 !important;">
+    
+    <!-- Logo Section -->
+    <!-- Added stronger inline background color -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="logo-section content-section" style="padding: 20px; text-align: center; background-color: #ffffff !important;">
+          <img src="https://share1.cloudhq-mkt3.net/46f0eab5205ad8.png" alt="RoboCup Café Logo" class="logo-image responsive-image" style="max-width: 16%; height: auto; display: inline-block;">
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Header Image Section -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 0; text-align: center; background-color: #ffffff !important;">
+          <img src="https://share1.cloudhq-mkt3.net/86c37dc87385f0.png" alt="RoboCup Café Header" class="header-image responsive-image" style="width: 100%; height: auto; display: block;">
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Introduction Text -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="text-section content-section" style="padding: 30px 20px; background-color: #ffffff !important; color: #000000 !important;">
+          <div class="body-text" style="color: #000000 !important;">
+            <p style="margin: 0 0 15px 0; color: #000000 !important;">Dovolte mi, abych Vás jménem společnosti <strong>Robocup Café</strong> oslovil s nabídkou, která přináší zcela nový rozměr kávěrenského provozu – a to zcela bez lidské obsluhy.</p>
+            
+            <p style="margin: 0 0 15px 0; color: #000000 !important;">Jsme první v České republice, kdo veřejnosti představuje plně autonomní robotickou kavárnu / baristu, která spojuje špičkovou technologii, moderní design a prvotřídní chuťový zážitek.</p>
+            
+            <p style="margin: 0 0 0 0; color: #000000 !important;">Nabízíme stylový a technologicky vyspělý prvek, který dokáže připravit nejen kvalitní <strong>kávu nápoje (studené i teplé), ale také oslazující ice tea, oblíbenou matchu, horkou čokoládu a několik desítek dalších nápojů.</strong></p>
+          </div>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Video Section -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 20px; text-align: center; background-color: #ffffff !important;">
+          <a href="https://www.youtube.com/watch?v=pDlUXgl-wRQ" style="display: inline-block; text-decoration: none;">
+            <img src="https://share1.cloudhq-mkt3.net/64538608f8e1b3.png" alt="Podívejte se na video" class="responsive-image" style="max-width: 100%; height: auto; border-radius: 8px;">
+          </a>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Features Title -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 30px 20px 20px; background-color: #ffffff !important;">
+          <h2 class="header-text" style="margin: 0; font-size: 23px; color: #e67e23 !important;">Důležité vlastnosti</h2>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Feature 1: Compact Design -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 0 20px 20px; background-color: #ffffff !important;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td style="width: 50%; padding-right: 10px; vertical-align: top;">
+                <img src="https://share1.cloudhq-mkt3.net/72e3aeee8c0371.png" alt="Kompaktní design" class="feature-image responsive-image" style="width: 100%; height: auto;">
+              </td>
+              <td style="width: 50%; padding-left: 10px; vertical-align: top;">
+                <div class="feature-text" style="padding: 20px 0; color: #000000 !important;">
+                  <p style="margin: 0 0 15px 0; color: #000000 !important;">Stánek nevyžaduje personál ani složitou infrastrukturu – pouze připojení k elektrické síti. Vše funguje plně automatizovaně zásob pouze pravidelně doplňujeme. Automat zabírá jen <strong>2,5 m²</strong> a jeho provoz je zcela tichý a čistý.</p>
+                  
+                  <p style="margin: 0; color: #000000 !important;">Jsme schopni oslovit široké spektrum návštěvníků ve všech věkových kategoriích, které se pohybují v prostorách.</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Feature 2: Process -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 0 20px 20px; background-color: #ffffff !important;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td style="width: 50%; padding-right: 10px; vertical-align: top;">
+                <img src="https://share1.cloudhq-mkt3.net/e257ed2fd45335.png" alt="Proces přípravy" class="feature-image responsive-image" style="width: 100%; height: auto;">
+              </td>
+              <td style="width: 50%; padding-left: 10px; vertical-align: top;">
+                <div class="feature-text" style="padding: 20px 0; color: #000000 !important;">
+                  <p style="margin: 0; color: #000000 !important;">Celý proces přípravy nápoje probíhá v <strong>plně uzavřeném prostoru</strong>, který chrání suroviny i hotovou kávu před vnějšími vlivy.<br><br>Díky tomu jsou všechny kroky – od mletí kávy až po nasazení víčka – nejen chráněné před kontaminací, ale i plně viditelné, takže zákazníci mohou sledovat, jak se jejich nápoj připravuje.</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Feature 3: Value Added -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 0 20px 20px; background-color: #ffffff !important;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td style="width: 50%; padding-right: 10px; vertical-align: top;">
+                <img src="https://share1.cloudhq-mkt3.net/9bcd6ba8270bbb.png" alt="Přidaná hodnota" class="feature-image responsive-image" style="width: 100%; height: auto;">
+              </td>
+              <td style="width: 50%; padding-left: 10px; vertical-align: top;">
+                <div class="feature-text" style="padding: 20px 0; color: #000000 !important;">
+                  <p style="margin: 0 0 15px 0; color: #000000 !important;"><strong>Přidaná hodnota pro zákazníky a generátor návštěvnosti</strong> – kiosek obslouží jeden šálek za 50 sekund, zvládne až 70 různých příchutí.</p>
+                  
+                  <p style="margin: 0; color: #000000 !important;">Přitahuje pozornost návštěvníků a je velmi fotogenický pro sdílení na internetu a sociálních sítích. Vaše prostory mohou získat <strong>zvýšenou publicitu a ještě větší zájem širší veřejnosti</strong>.</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Call to Action Section -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td style="background-color: #7e7e7e; padding: 0;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td style="width: 67%; padding: 30px 20px; vertical-align: top;">
+                <h3 style="margin: 0 0 15px 0; font-family: 'Montserrat', Arial, sans-serif; font-weight: 700; font-size: 14px; color: #ffffff; text-align: left;">NAŠE VIZE:</h3>
+                <p style="margin: 0; font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #ffffff; text-align: left; line-height: 1.4; font-style: italic;">Definovat kávěrenský zážitek integrace pokročilých technologií při zachování hodnot výjimečného servisu a kulinářské dokonalosti.</p>
+              </td>
+              <td class="button-section" style="width: 33%; padding: 36px 20px 40px; text-align: center; vertical-align: middle;">
+                <a href="mailto:info@robocupcafe.com" class="cta-button" style="font-family: 'Montserrat', Arial, sans-serif; font-weight: 700; font-size: 12px; color: #ffffff !important; background-color: #e67e23; text-decoration: none; padding: 15px 30px; border-radius: 22px; display: inline-block; text-align: center; letter-spacing: 2.1px;">MÁM ZÁJEM</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Usage Options Title -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 30px 20px; background-color: #ffffff !important;">
+          <h2 class="header-text" style="margin: 0; font-size: 23px; color: #e67e23 !important;">Možnosti využití</h2>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Indoor Option -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 0 20px 20px; background-color: #ffffff !important;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td style="width: 33%; padding-right: 15px; vertical-align: top;">
+                <img src="https://share1.cloudhq-mkt3.net/f7ec3d54f2e567.jpeg" alt="Indoor prostředí" class="feature-image responsive-image" style="width: 100%; height: auto;">
+              </td>
+              <td style="width: 67%; padding-left: 15px; vertical-align: top;">
+                <div style="padding: 30px 0 5px;">
+                  <h3 class="header-text" style="margin: 0 0 10px 0; font-size: 18px; color: #e67e23 !important;">INDOOR - bez sezení</h3>
+                  <div class="feature-text" style="color: #000000 !important;">
+                    <p style="margin: 0; color: #000000 !important;">Nejčastější možnost s využitím téměř všude. Jednoduché zprovoznění a časově téměř okamžitě funkční.</p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Indoor with Seating Option -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 0 20px 20px; background-color: #ffffff !important;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td style="width: 33%; padding-right: 15px; vertical-align: top;">
+                <img src="https://share1.cloudhq-mkt3.net/de4cc8f6ed4e1f.jpeg" alt="Indoor se sezením" class="feature-image responsive-image" style="width: 100%; height: auto;">
+              </td>
+              <td style="width: 67%; padding-left: 15px; vertical-align: top;">
+                <div style="padding: 30px 0 5px;">
+                  <h3 class="header-text" style="margin: 0 0 10px 0; font-size: 18px; color: #e67e23 !important;">INDOOR - se sezením</h3>
+                  <div class="feature-text" style="color: #000000 !important;">
+                    <p style="margin: 0; color: #000000 !important;">Plnohodnotná kavárna, kde si můžete dobít baterie.</p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Outdoor Option -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 0 20px 20px; background-color: #ffffff !important;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td style="width: 33%; padding-right: 15px; vertical-align: top;">
+                <img src="https://share1.cloudhq-mkt3.net/9f4f34877eef460.jpeg" alt="Outdoor prostředí" class="feature-image responsive-image" style="width: 100%; height: auto;">
+              </td>
+              <td style="width: 67%; padding-left: 15px; vertical-align: top;">
+                <div style="padding: 30px 0 5px;">
+                  <h3 class="header-text" style="margin: 0 0 10px 0; font-size: 18px; color: #e67e23 !important;">OUTDOOR - bez sezení</h3>
+                  <div class="feature-text" style="color: #000000 !important;">
+                    <p style="margin: 0; color: #000000 !important;">Přístupný všem 24/7.</p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Sizes Title -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 30px 20px; background-color: #ffffff !important;">
+          <h2 class="header-text" style="margin: 0; font-size: 23px; color: #e67e23 !important;">Rozměry</h2>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Sizes Image -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 0 20px 20px; background-color: #ffffff !important;">
+          <img src="https://share1.cloudhq-mkt3.net/5ba111fb25ae19.jpeg" alt="Rozměry RoboCup Café" class="responsive-image" style="width: 100%; height: auto;">
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Partnership Call -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 30px 20px; background-color: #ffffff !important;">
+          <h3 class="header-text" style="margin: 0; font-size: 14px; color: #e67e23 !important;">Těšíme se na případnou spolupráci!</h3>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Logo Footer -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 20px; text-align: center; background-color: #ffffff !important;">
+          <img src="https://share1.cloudhq-mkt3.net/6800afe541a3aa.png" alt="RoboCup Café" class="responsive-image" style="max-width: 20%; height: auto;">
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Download Link -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff !important;">
+      <tr>
+        <td class="content-section" style="padding: 20px; text-align: center; background-color: #ffffff !important;">
+          <a href="https://share1.cloudhq-mkt3.net/79ee46ccb181b9.pdf" style="color: #0000ee; text-decoration: underline; font-family: 'Montserrat', Arial, sans-serif; font-size: 14px;">Katalog ke stažení zde</a>
+        </td>
+      </tr>
+    </table>
+    
+  </div>
+  
+  <!--[if mso]>
+      </td>
+    </tr>
+  </table>
+  <![endif]-->
+</body>
+</html>
